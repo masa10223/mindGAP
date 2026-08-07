@@ -43,9 +43,38 @@ quantitative_analysis/
 *.npz
 *.parquet
 
-# --- Large / local docs ---
+# --- Local tooling / one-off publish helpers ---
+scripts/gh
+scripts/create_github_private_repo.sh
+
+# --- Backups & ad-hoc local scripts ---
+*.backup
+*_backup.py
+*_backup.*
+check_data.py
+check_state_index.py
+test_unified_functions.py
+organize_outputs.py
+create_processed_data.py
+run_batch.sh
+
+# --- Paper / research leftovers (not part of mindGAP env+demo) ---
+*.tex
 plos_latex_template.pdf
+MCMC_INTEGRATION_README.md
+Energy_Landscape_Analysis_section.tex
 .Trash-*/
+
+# --- Dated / experiment-specific batch configs ---
+configs/batch_config_20*.json
+configs/batch_config_emotional.json
+configs/batch_config_isolation.json
+configs/batch_config_social.json
+
+# --- Research-only notebook helpers (parent ELA_analysis leftovers) ---
+notebooks/hub_submatrix_analysis.py
+notebooks/jij_prediction.py
+notebooks/questionnaire_scores.py
 
 # --- IDE / OS ---
 .idea/
@@ -60,7 +89,3 @@ Thumbs.db
 !.env.example
 credentials*.json
 **/secrets*
-
-*.backup
-*_backup.py
-scripts/gh
