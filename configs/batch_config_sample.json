@@ -1,0 +1,28 @@
+{
+  "description": "一括実行設定ファイルのサンプル",
+  "parallel_execution": true,
+  "max_workers": 2,
+  "jobs": [
+    {
+      "name": "PHQ9_all_analysis",
+      "questionnaire_type": "PHQ9_all",
+      "data_source": "csv",
+      "hq25_threshold": 3,
+      "notes": "PHQ-9の全データ解析"
+    },
+    {
+      "name": "HQ25_threshold2",
+      "questionnaire_type": "HQ-25+4",
+      "data_source": "excel",
+      "hq25_threshold": 2,
+      "notes": "HQ-25閾値2での解析"
+    },
+    {
+      "name": "HQ25_threshold3",
+      "questionnaire_type": "HQ-25+4",
+      "data_source": "excel",
+      "hq25_threshold": 3,
+      "notes": "HQ-25閾値3での解析"
+    }
+  ]
+}

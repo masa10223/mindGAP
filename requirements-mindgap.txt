@@ -1,0 +1,21 @@
+# mindGAP jaxenv on mindgap image (persisted under ./venv/jaxenv)
+#
+# Python 3.10 イメージ: jax/cupy/jupyterlab はイメージ側 (--system-site-packages)
+# cudf / cugraph は venv に追加 (py3.10 向け最新)
+
+# --- GPU / RAPIDS (py3.10) ---
+ipykernel>=6.29.0
+cudf-cu12==26.2.1
+cugraph-cu12==26.2.0
+pyarrow==23.0.1
+
+# --- project analysis ---
+scipy>=1.9.0
+scikit-learn>=1.3.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.0.0
+networkx>=2.8.0
+tqdm>=4.64.0
+PyYAML>=6.0
+openpyxl>=3.0.0

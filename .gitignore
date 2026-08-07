@@ -1,0 +1,65 @@
+# --- Python / envs ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+.jupyter/
+*.ipynb_checkpoints
+
+# --- mindGAP runtime / caches ---
+tmp/
+pip-cache/
+jupyter.log
+*.log
+
+# --- Local data & large outputs (do not publish) ---
+data/original/
+data/processed/
+figs_for_paper/
+notebooks/figs_for_paper/
+notebooks/csvs_for_paper/
+notebooks/figs/
+outputs/
+batch_outputs/
+backups/
+logs/
+execution_history/
+quantitative_analysis/
+*.pkl
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.parquet
+
+# --- Large / local docs ---
+plos_latex_template.pdf
+.Trash-*/
+
+# --- IDE / OS ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+credentials*.json
+**/secrets*
+
+*.backup
+*_backup.py

@@ -1,0 +1,33 @@
+{
+    "data": {
+        "data_dir": "data",
+        "csv_dir": "outputs/csvs",
+        "output_dir": "outputs",
+        "backup_dir": "backups"
+    },
+    "processing": {
+        "hq25_threshold": 3,
+        "device_id": 0,
+        "batch_size": 1000,
+        "max_iterations": 1000,
+        "convergence_threshold": 1e-6,
+        "verbose": false
+    },
+    "visualization": {
+        "save_figures": true,
+        "figure_format": "png",
+        "figure_dpi": 300,
+        "figure_size": [
+            12,
+            8
+        ],
+        "color_scheme": "viridis",
+        "show_plots": false
+    },
+    "logging": {
+        "log_level": "INFO",
+        "log_file": null,
+        "log_format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        "enable_console_logging": true
+    }
+}

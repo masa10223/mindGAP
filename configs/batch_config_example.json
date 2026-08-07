@@ -1,0 +1,53 @@
+{
+    "executions": [
+        {
+            "questionnaire_type": "PHQ9_all",
+            "data_source": "csv",
+            "hq25_threshold": 3,
+            "ips22_threshold": 4,
+            "iat_threshold": 3,
+            "tacs22_threshold": 4,
+            "device_id": 0,
+            "output_dir": "outputs",
+            "notes": "PHQ-9の解析（処理済みデータ）"
+        },
+        {
+            "questionnaire_type": "HQ-25+4",
+            "data_source": "excel",
+            "hq25_threshold": 2,
+            "ips22_threshold": 4,
+            "iat_threshold": 3,
+            "tacs22_threshold": 4,
+            "device_id": 0,
+            "output_dir": "outputs",
+            "notes": "HQ-25の解析（オリジナルデータ、閾値2）"
+        },
+        {
+            "questionnaire_type": "HQ-25+4",
+            "data_source": "excel",
+            "hq25_threshold": 3,
+            "ips22_threshold": 4,
+            "iat_threshold": 3,
+            "tacs22_threshold": 4,
+            "device_id": 0,
+            "output_dir": "outputs",
+            "notes": "HQ-25の解析（オリジナルデータ、閾値3）"
+        },
+        {
+            "questionnaire_type": "PHQ-9",
+            "data_source": "excel",
+            "hq25_threshold": 3,
+            "ips22_threshold": 4,
+            "iat_threshold": 3,
+            "tacs22_threshold": 4,
+            "device_id": 0,
+            "output_dir": "outputs",
+            "notes": "PHQ-9の解析（オリジナルデータ）"
+        }
+    ],
+    "parallel": false,
+    "max_workers": 2,
+    "delay_between_executions": 1.0,
+    "retry_failed": false,
+    "max_retries": 1
+}

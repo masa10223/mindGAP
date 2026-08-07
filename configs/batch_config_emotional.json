@@ -1,0 +1,77 @@
+{
+    "description": "統合解析設定（2025年9月11日版）- デバイス分け実行",
+    "parallel_execution": true,
+    "max_workers": 4,
+    "jobs": [
+        {
+            "name": "emotional_2006_thr2_device1",
+            "questionnaire_type": "emotional_2006_thr2",
+            "data_source": "csv",
+            "device_id": 1,
+            "notes": "HQ-25+4 感情的カテゴリ 2006年データ（デバイス1・閾値2）"
+        },
+        {
+            "name": "emotional_2006_thr3_device0",
+            "questionnaire_type": "emotional_2006_thr3",
+            "data_source": "csv",
+            "device_id": 0,
+            "notes": "HQ-25+4 感情的カテゴリ 2006年データ（デバイス0・閾値3）"
+        },
+        {
+            "name": "emotional_2012_thr2_device1",
+            "questionnaire_type": "emotional_2012_thr2",
+            "data_source": "csv",
+            "device_id": 1,
+            "notes": "HQ-25+4 感情的カテゴリ 2012年データ（デバイス1・閾値2）"
+        },
+        {
+            "name": "emotional_2012_thr3_device0",
+            "questionnaire_type": "emotional_2012_thr3",
+            "data_source": "csv",
+            "device_id": 0,
+            "notes": "HQ-25+4 感情的カテゴリ 2012年データ（デバイス0・閾値3）"
+        },
+        {
+            "name": "emotional_2108_thr2_device1",
+            "questionnaire_type": "emotional_2108_thr2",
+            "data_source": "csv",
+            "device_id": 1,
+            "notes": "HQ-25+4 感情的カテゴリ 2021年8月データ（デバイス1・閾値2）"
+        },
+        {
+            "name": "emotional_2108_thr3_device0",
+            "questionnaire_type": "emotional_2108_thr3",
+            "data_source": "csv",
+            "device_id": 0,
+            "notes": "HQ-25+4 感情的カテゴリ 2021年8月データ（デバイス0・閾値3）"
+        },
+        {
+            "name": "emotional_2204_thr2_device1",
+            "questionnaire_type": "emotional_2204_thr2",
+            "data_source": "csv",
+            "device_id": 1,
+            "notes": "HQ-25+4 感情的カテゴリ 2022年4月データ（デバイス1・閾値2）"
+        },
+        {
+            "name": "emotional_2204_thr3_device0",
+            "questionnaire_type": "emotional_2204_thr3",
+            "data_source": "csv",
+            "device_id": 0,
+            "notes": "HQ-25+4 感情的カテゴリ 2022年4月データ（デバイス0・閾値3）"
+        },
+        {
+            "name": "emotional_all_thr2_device1",
+            "questionnaire_type": "emotional_all_thr2",
+            "data_source": "csv",
+            "device_id": 1,
+            "notes": "HQ-25+4 感情的カテゴリ 全年代統合データ（デバイス1・閾値2）"
+        },
+        {
+            "name": "emotional_all_thr3_device0",
+            "questionnaire_type": "emotional_all_thr3",
+            "data_source": "csv",
+            "device_id": 0,
+            "notes": "HQ-25+4 感情的カテゴリ 全年代統合データ（デバイス0・閾値3）"
+        }
+    ]
+}
