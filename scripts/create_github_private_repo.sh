@@ -9,12 +9,15 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
+# Prefer local scripts/gh when system gh is missing
+export PATH="$ROOT/scripts:$PATH"
+
 REPO_NAME="${REPO_NAME:-mindGAP}"
 OWNER="${OWNER:-masa10223}"
 VISIBILITY="${VISIBILITY:-private}"
 
 if ! command -v gh >/dev/null 2>&1; then
-  echo "error: gh not found. Install GitHub CLI first." >&2
+  echo "error: gh not found. Install GitHub CLI or place binary at scripts/gh." >&2
   exit 1
 fi
 
@@ -36,6 +39,7 @@ if [ -z "$BRANCH" ]; then
 fi
 
 echo "Creating ${VISIBILITY} repo: ${OWNER}/${REPO_NAME} (branch: ${BRANCH})"
+echo "Using gh: $(command -v gh)"
 
 # Prefer SSH remote; fall back to HTTPS if SSH is not configured
 if gh repo view "${OWNER}/${REPO_NAME}" >/dev/null 2>&1; then

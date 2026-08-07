@@ -63,3 +63,4 @@ credentials*.json
 
 *.backup
 *_backup.py
+scripts/gh
