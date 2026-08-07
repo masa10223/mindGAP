@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# mindGAP — ELA_analysis 用 Jupyter コンテナ起動
+# mindGAP — mindGAP 用 Jupyter コンテナ起動
 set -euo pipefail
 
 # shellcheck source=scripts/mindgap-env.sh
@@ -7,7 +7,7 @@ source "$(cd "$(dirname "$0")" && pwd)/scripts/mindgap-env.sh"
 
 FORCE_BOOTSTRAP="${FORCE_BOOTSTRAP:-0}"
 
-echo "project: ELA_analysis  container: $NAME  port: $PORT  image: $IMAGE"
+echo "project: mindGAP  container: $NAME  port: $PORT  image: $IMAGE"
 
 echo "[1/4] remove old container (if exists)"
 docker rm -f "$NAME" >/dev/null 2>&1 || true
